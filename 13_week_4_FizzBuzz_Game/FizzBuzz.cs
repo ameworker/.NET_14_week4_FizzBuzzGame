@@ -14,22 +14,21 @@ namespace _13_week_4_FizzBuzz_Game
         {
             if (number % 3 == 0 && number % 5 != 0)
             {
-                Console.WriteLine("Fizz");
-                return "Fizz";
+                string result = "Fizz";
+                return result;
             }
             else if (number % 3 != 0 && number % 5 == 0)
             {
-                Console.WriteLine("Buzz");
-                return "Buzz";
+                string result="Buzz";
+                return result;
             }
             else if (number % 3 == 0 && number % 5 == 0)
             {
-                Console.WriteLine("FizzBuzz");
-                return "FizzBuzz";
+                string result = "FizzBuzz";
+                return result;
             }
             else
             {
-                Console.WriteLine(number);
                 return number.ToString();
             }
         }

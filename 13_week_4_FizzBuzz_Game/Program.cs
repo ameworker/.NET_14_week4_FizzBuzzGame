@@ -25,7 +25,8 @@ namespace _13_week_4_FizzBuzz_Game
                     }
 
                     FizzBuzz fzCheck = new FizzBuzz();
-                    fzCheck.DescribeNumber(userNumber);
+                    string result = fzCheck.DescribeNumber(userNumber);
+                    Console.WriteLine(result);
 
                     Console.WriteLine();
                     Console.WriteLine("Chcesz spróbować ponownie? T/N");
