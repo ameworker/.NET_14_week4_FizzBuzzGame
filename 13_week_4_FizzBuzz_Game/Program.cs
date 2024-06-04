@@ -15,6 +15,7 @@ namespace _13_week_4_FizzBuzz_Game
             Console.WriteLine();
             Console.WriteLine("Podaj liczbę");
             bool continueFlag = true;
+
             do
             {
                 try
@@ -31,6 +32,7 @@ namespace _13_week_4_FizzBuzz_Game
                     Console.WriteLine();
                     Console.WriteLine("Chcesz spróbować ponownie? T/N");
                     string decision = Console.ReadLine();
+
                     if (decision.ToUpper() == "N")
                     {
                         continueFlag = false;

@@ -12,25 +12,29 @@ namespace _13_week_4_FizzBuzz_Game
 
         public string DescribeNumber(int number)
         {
+            string result = string.Empty;
+
             if (number % 3 == 0 && number % 5 != 0)
             {
-                string result = "Fizz";
-                return result;
+                result = "Fizz";
+
             }
             else if (number % 3 != 0 && number % 5 == 0)
             {
-                string result="Buzz";
-                return result;
+                result = "Buzz";
+
             }
             else if (number % 3 == 0 && number % 5 == 0)
             {
-                string result = "FizzBuzz";
-                return result;
+                result = "FizzBuzz";
+
             }
             else
             {
-                return number.ToString();
+                result = number.ToString();
             }
+
+            return result;
         }
     }
 }
